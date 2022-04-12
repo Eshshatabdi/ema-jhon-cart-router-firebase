@@ -37,7 +37,13 @@
     background-color: rgba(355, 153, 0, 0.3);
     border-radius: 5px;
     border: none;
+    cursor: pointer;
     font-size: 20px;
+}
+
+.form-submit:hover {
+    background-color: rgba(355, 153, 0, 0.6);
+
 }
 
 .form-link {
