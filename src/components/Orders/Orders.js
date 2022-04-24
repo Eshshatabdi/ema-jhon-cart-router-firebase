@@ -11,7 +11,7 @@ const Orders = () => {
     // ekane parameter lagbe karon kuntake click kora hobe ta bujher jonno eta dite hoy
     const hanleRemoveProduct = product => {
         console.log(product)
-        const rest = cart.filter(pd => pd.id !== product.id)
+        const rest = cart.filter(pd => pd._id !== product._id)
         setCart(rest)
 
     }
@@ -19,7 +19,7 @@ const Orders = () => {
         <div className='shop-container'>
             <div className="review-items-container">
                 {
-                    cart.map(product => <ReviewItem key={product.id}
+                    cart.map(product => <ReviewItem key={product._id}
                         product={product}
                         hanleRemoveProduct={hanleRemoveProduct}>
 

@@ -7,13 +7,13 @@ const SignUp = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    // const [error, setError] = useState('');
+    const [error, setError] = useState('');
 
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
-        error,
+
     ] = useCreateUserWithEmailAndPassword(auth);
 
     // const navigate = useNavigate();
@@ -65,7 +65,7 @@ const SignUp = () => {
                             <label htmlFor="confirm-password">Confirm Password</label>
                             <input onBlur={handleConfirmPasswordBlur} type="password" name="confirm Password" id="" required />
                         </div>
-                        {/* <p style={{ color: 'red' }}>{error}</p> */}
+                        <p style={{ color: 'red' }}>{error}</p>
                         <input className='form-submit' type="submit" value="login" />
                     </form>
                     <p>
