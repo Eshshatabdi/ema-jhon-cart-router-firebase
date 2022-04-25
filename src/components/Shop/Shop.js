@@ -92,7 +92,7 @@ const Shop = () => {
                         [...Array(pageCount).keys()].map(number => <button className={page === number ? 'selected' : ''}
                             onClick={() => setPage(number)}>{number}</button>)
                     }
-                    {size}
+
                     <select onChange={e => setSize(e.target.value)}>
                         <option value="5">5</option>
                         <option value="10" selected>10</option>
